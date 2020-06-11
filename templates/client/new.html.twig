@@ -1,0 +1,17 @@
+
+{% extends 'clientheritage.html.twig' %}
+{% block title %}New Client{% endblock %}
+
+{% block body %}
+ {{include ('view/headerT.html.twig') }}
+   <section id="main-content">
+      <section class="wrapper">
+ <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Liste clients/Ajouter Client </li>
+  </ol>
+</nav>
+    {{ include('client/_form.html.twig') }}
+
+   
+{% endblock %}

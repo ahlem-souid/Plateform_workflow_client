@@ -1,0 +1,27 @@
+{% extends 'clientheritage.html.twig' %}
+
+{% block title %}modifier Client{% endblock %}
+
+{% block body %}
+<div id="header">
+        {{include ('view/headerT.html.twig') }}
+    </div>
+</div>
+<section id="main-content">
+      <section class="wrapper">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Liste clients/ Modifier Client</li>
+  </ol>
+</nav>
+   
+
+    {{ include('client/_form.html.twig', {'button_label': 'Modifier'}) }}
+ 
+  <div class="row">
+     <div class="col-auto">
+   
+ </div>
+    </section>
+    </section>
+{% endblock %}
